@@ -12,5 +12,8 @@ describe('test for getMonth function', ()=>{
     }),
     it('sould work correctly with string input', ()=> {
         expect(getMonth('NaN')).toBe('неизвестно')
+    }),
+    it('sould work correctly with empty string', ()=> {
+        expect(getMonth(' ')).toBe('неизвестно')
     })
 })
